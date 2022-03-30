@@ -1,0 +1,64 @@
+.login {
+  margin: 5vw 33vw;
+  height: 59vh;
+}
+
+.sign-in-header {
+  text-align: center;
+  margin: auto;
+  display: block;
+  color: #494949;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 4%;
+}
+
+.logo {
+  text-align: center;
+  margin: 4% auto;
+  display: block;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: black;
+  margin-bottom: 7%;
+}
+
+.btn-margin {
+  margin-top: 5%;
+}
+
+.sub-title {
+  margin-bottom: 6%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 120px;
+}
+
+#walletlogo {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+}
+
+.btn-div {
+  text-align: center;
+  color: rgb(139, 9, 9);
+}
+
+.btn-class {
+  border: 1px solid rgb(139, 9, 9);
+  color: rgb(139, 9, 9);
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}

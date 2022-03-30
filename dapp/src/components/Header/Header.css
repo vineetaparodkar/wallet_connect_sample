@@ -1,0 +1,31 @@
+.navbar {
+  background-color: #000;
+  margin-left: 0%;
+}
+a {
+  text-decoration: none !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+a:hover {
+  color: rgb(153, 14, 14) !important;
+}
+
+.logo {
+  width: 70px;
+}
+
+.loginAlign {
+  margin-top: 10px !important;
+}
+
+.navbar-brand {
+  width: 115px;
+}
+
+.headerclass {
+  color: white;
+  margin-top: 10px !important;
+  margin-left: -30px;
+}
