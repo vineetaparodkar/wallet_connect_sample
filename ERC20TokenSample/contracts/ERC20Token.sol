@@ -3,10 +3,10 @@
 pragma solidity ^0.8.2;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-
+import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
 
-contract ERC20Token is ERC20, AccessControl {
+contract ERC20Token is ERC20, ERC20Burnable, AccessControl {
     // Create a new role identifier for the minter role
 
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
@@ -40,10 +40,10 @@ contract ERC20Token is ERC20, AccessControl {
         _mint(msg.sender, _amount * 10**uint256(decimals()));
     }
 
-    function burn(address _account, uint256 _amount)
-        public
+    function burn(uint256 _amount)
+        public override
         onlyRole(BURNER_ROLE)
     {
-        _burn(_account, _amount * 10**uint256(decimals()));
+        burn(_amount * 10**uint256(decimals()));
     }
 }
