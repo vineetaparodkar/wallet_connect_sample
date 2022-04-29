@@ -8,6 +8,8 @@ Additional Pre-requisites for developement mode deployment:
 
 - [Node 12](https://nodejs.org/es/blog/release/v12.22.7/)
 
+- metamask or any other wallet compatible with wallet connect
+
 ## Setup
 
 1. Clone the repository and checkout to main branch 
