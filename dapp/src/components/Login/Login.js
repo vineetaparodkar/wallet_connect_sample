@@ -23,11 +23,13 @@ const Login = ({ provider, web3Login }) => {
     //subscribe to account changed
     provider.on("accountChanged", (accounts) => {
       console.log("accounts changed", accounts);
+      web3Login(accounts[0], provider);
     });
 
     //subscribe to chainId changed
     provider.on("chainChanged", (chainId) => {
       console.log("accounts changed", chainId);
+      navigate("/home");
     });
 
     //subscribe to session disconnect
